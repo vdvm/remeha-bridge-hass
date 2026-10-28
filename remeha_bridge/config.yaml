@@ -1,5 +1,5 @@
 name: Remeha Bridge
-version: "0.5.2"
+version: "0.6.0"
 slug: remeha_bridge
 description: Shows your Remeha boiler and thermostat in Home Assistant – read-only, via the Remeha Home cloud
 url: https://github.com/vdvm/remeha-bridge-hass

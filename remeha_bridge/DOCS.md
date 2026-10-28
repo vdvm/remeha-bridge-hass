@@ -9,7 +9,7 @@ publishes them to Home Assistant via MQTT discovery, as one device
 - **email**, **password:** your Remeha Home account.
 - **poll_interval_s:** seconds between polls, 30 to 3600 (default 60).
 - **timezone:** your time zone; decides which day "today" is for the
-  consumption sensors (default `Europe/Amsterdam`).
+  consumption and boiler log sensors (default `Europe/Amsterdam`).
 - **model_name:** the model shown on the device (default `Tzerra Ace`).
 - **log_level:** `error`, `warn`, `info` or `debug` (default `info`).
 - **mqtt:** your broker; the defaults fit the Mosquitto app. Fill in the
@@ -31,6 +31,9 @@ A wrong or missing value stops the app at startup; the log names the option.
   boiler entities show "unavailable" until it answers again; nothing to do.
 - **Consumption today** shows 0 or unknown between midnight and 01:00
   (02:00 in summer): Remeha counts per UTC date.
+- **Heat demand / hot water time and starts today** are too low after the
+  app restarted: they start again at 0 and show today's value only from
+  midnight on. The daily totals in Home Assistant's statistics stay right.
 
 ## Your data
 
