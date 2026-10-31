@@ -7,7 +7,9 @@ publishes them to Home Assistant via MQTT discovery, as one device
 Setting a temperature on the thermostat entity lasts until the next switch of
 the clock program. The mode `auto`
 returns to the clock program; `heat` and `off` only show the state of the
-eTwist. The result appears with the next poll. A command that fails is logged
+eTwist. While `auto` is selected the Home Assistant interface cannot choose it again,
+also during a temporary temperature: use the button **resume program**, or the
+action `climate.set_hvac_mode` in an automation. The result appears with the next poll. A command that fails is logged
 and not repeated.
 
 ## Configuration
