@@ -17,7 +17,8 @@ and not repeated.
 - **email**, **password:** your Remeha Home account.
 - **poll_interval_s:** seconds between polls, 30 to 3600 (default 60).
 - **timezone:** your time zone; decides which day "today" is for the
-  consumption and boiler log sensors (default `Europe/Amsterdam`).
+  consumption and boiler log sensors, and the time of the next switch
+  (default `Europe/Amsterdam`).
 - **model_name:** the model shown on the device (default `Tzerra Ace`).
 - **log_level:** `error`, `warn`, `info` or `debug` (default `info`).
 - **mqtt:** your broker; the defaults fit the Mosquitto app. Fill in the
