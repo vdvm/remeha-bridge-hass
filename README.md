@@ -1,7 +1,7 @@
 # Remeha Bridge
 
-Shows your Remeha boiler and eTwist thermostat in Home Assistant, read from
-the Remeha Home cloud. Read-only: the app never changes a setting.
+Shows your Remeha boiler and eTwist thermostat in Home Assistant, via the
+Remeha Home cloud, and lets Home Assistant set the thermostat temperature.
 
 ## Installation in Home Assistant
 

@@ -2,7 +2,13 @@
 
 Reads your boiler and thermostat from the Remeha Home cloud every minute and
 publishes them to Home Assistant via MQTT discovery, as one device
-"Remeha". Read-only: the app never sends a command to the boiler.
+"Remeha".
+
+Setting a temperature on the thermostat entity lasts until the next switch of
+the clock program. The mode `auto`
+returns to the clock program; `heat` and `off` only show the state of the
+eTwist. The result appears with the next poll. A command that fails is logged
+and not repeated.
 
 ## Configuration
 
